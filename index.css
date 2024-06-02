@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
+
+:root {
+  --orange-color: rgb(255, 136, 0);
+}
+::selection{
+    background-color: transparent;
+    color: var(--orange-color);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body{
+    overflow-x: hidden;
+}
+.main-container {
+  height: 130vh;
+  width: 100%;
+  background-image: url("images/airport.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 0 2rem;
+}
+
+header {
+  padding: 0rem 5rem;
+}
+.navbar{
+    transform: translateX(-150%);
+}
+.navbar-brand {
+  font-size: 25px !important;
+  color: white !important;
+
+}
+.navbar-toggler {
+  background-color: var(--orange-color) !important;
+}
+.navbar-toggler:focus{
+  box-shadow:none !important;
+}
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+.navbar-nav {
+  transform: translateX(35px);
+}
+.nav-link {
+  color: white !important;
+  font-weight: 100;
+  margin: 0 7px;
+  font-size: 13px;
+}
+.search_btn {
+  height: 35px;
+  width: 35px;
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 500px;
+  margin-right: 3px;
+  color: white;
+}
+.search_btn:hover {
+  background-color: rgba(255, 255, 255);
+  color: var(--orange-color);
+  transition: all 0.3s ease-in-out !important;
+}
+
+.nav_btn {
+  color: white !important;
+  background-color: var(--orange-color) !important;
+  font-size: 15px !important;
+  margin: 0 3px;
+  outline: none !important;
+}
+.nav_btn:focus {
+  box-shadow: none !important;
+}
+.sign_in_btn {
+  background-color: transparent !important;
+}
+.sign_in_btn:hover {
+  background-color: rgba(255, 255, 255, 0.3) !important;
+}
+
+
+
+
+.heading{
+    opacity: 0;
+    transform: translateY(-2.5rem);
+}
+
+
+.plane-img{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+    margin-top: 3rem;
+    opacity: 0;
+    transform: scale(1.5);
+}
+.image{
+    transform:  translateY(10rem);
+}
+
+
+
+
+
+.floating-container {
+  display: none;
+  width: 80% !important;
+  background-color: purple;
+  border-radius: 7px;
+}
+p {
+  color: white !important;
+}
+.first-chart {
+  border-radius: 7px;
+  border-style: solid;
+  border: 1px solid gray;
+}
+.icon-div {
+  height: 25px;
+  width: 25px;
+  background-color: orange !important;
+  border-radius: 50%;
+}
